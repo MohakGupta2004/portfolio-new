@@ -31,7 +31,7 @@ export function AchievementCard() {
       2800
     );
     return () => clearInterval(interval);
-  }, []);
+  }, [achievements.length]);
 
   const current = achievements[index];
 

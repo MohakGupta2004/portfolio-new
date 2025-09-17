@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { Card } from './ui/card';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export function ProfileCard() {
   const currentTime = new Date().toLocaleString('en-US', {
@@ -27,7 +28,7 @@ export function ProfileCard() {
       setIndex((prev) => (prev + 1) % words.length);
     }, 2500);
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   const current = words[index];
 
@@ -48,9 +49,11 @@ export function ProfileCard() {
         {/* glowing overlay */}
         <div className="flex items-center gap-4 mb-4">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20">
-            <img
+            <Image
               src="https://pbs.twimg.com/profile_images/1965130285122543616/w2iOLwN3_400x400.jpg"
               alt="Mohak Gupta"
+              width={48}
+              height={48}
               className="w-full h-full object-cover"
               draggable={false}
             />
@@ -93,7 +96,7 @@ export function ProfileCard() {
           </p>
 
           <p className="text-gray-300 text-sm">
-            Hello, I'm Mohak! A 21 year old developer & cybersecurity and web3 enthusiast based in India.
+            Hello, I&apos;m Mohak! A 21 year old developer & cybersecurity and web3 enthusiast based in India.
           </p>
 
           <motion.div

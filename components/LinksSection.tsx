@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Card } from "./ui/card";
-
+import Image from "next/image";
 const links = [
   { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg", href: "https://github.com/MohakGupta2004", label: "GitHub" },
   { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg", href: "https://twitter.com/rushbeef04", label: "X" },
@@ -9,9 +9,8 @@ const links = [
   { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg", href: "https://linkedin.com/in/mohak-gupta-007065294", label: "LinkedIn" }
 ];
 
-type LinksSectionProps = { smallGrid?: boolean };
 
-export function LinksSection({ smallGrid = false }: LinksSectionProps) {
+export function LinksSection() {
   return (
     <motion.div
   initial={{ opacity: 0, y: -30 }}
@@ -54,7 +53,7 @@ export function LinksSection({ smallGrid = false }: LinksSectionProps) {
               aria-label={link.label}
               className="flex items-center justify-center w-full h-full"
             >
-              <img
+              <Image
                 src={link.src}
                 alt={link.label}
                 className="w-6 h-6 invert brightness-0"

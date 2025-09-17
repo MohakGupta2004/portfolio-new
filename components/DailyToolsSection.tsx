@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Card } from './ui/card'; // Assuming this is your custom Card component
-import { Code, Music } from 'lucide-react';
+import { Music } from 'lucide-react';
 
 // Data for the Tech Stack card
 const techStackData = [

@@ -9,6 +9,7 @@ import { Card, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AnimatedBackground } from '@/components/AnimatedBackground';
+import Image from 'next/image';
 
 // --- DATA ---
 type Project = {
@@ -101,11 +102,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
         {/* UPDATED: Image size increased and shadow removed */}
         <div className="my-auto flex-grow flex items-center justify-center py-4">
-          <img
+          <Image
             src={project.imageUrl}
             alt={project.title}
             className="w-auto h-full max-h-[250px] md:max-h-[300px] rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
-            // Removed style={{ filter: 'drop-shadow(...)' }}
           />
         </div>
 
