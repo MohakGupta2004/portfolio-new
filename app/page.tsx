@@ -21,7 +21,7 @@ export default function App() {
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-10 flex justify-center pt-24 px-4 sm:px-6 h-screen overflow-auto">
+      <div className="relative z-10 flex justify-center pt-15 md:pt-24 px-4 sm:px-6 h-screen overflow-auto">
         <div className="w-full max-w-5xl">
 
           {/* Unified grid */}
@@ -69,11 +69,12 @@ export default function App() {
                   </div>
 
                   {/* Achievement Card (always visible at bottom) */}
-                  <div className="flex-shrink-0">
+                  <div className="flex-shrink-0 pb-6 md:pb-0">
                     <DraggableWrapper>
                       <AchievementCard />
                     </DraggableWrapper>
                   </div>
+
                 </div>
 
 

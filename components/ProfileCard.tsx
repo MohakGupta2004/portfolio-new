@@ -52,6 +52,7 @@ export function ProfileCard() {
               src="https://pbs.twimg.com/profile_images/1965130285122543616/w2iOLwN3_400x400.jpg"
               alt="Mohak Gupta"
               className="w-full h-full object-cover"
+              draggable={false}
             />
           </div>
           <div className="flex-1">

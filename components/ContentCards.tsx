@@ -28,7 +28,7 @@ const cardsData: CardType[] = [
     artist: 'by Sombra',
     year: '2017',
     imageUrl: 'https://i.scdn.co/image/ab67616d0000b2739d24f74c1e2d8a12b1e591ec',
-    spotifyUrl: 'https://open.spotify.com/track/1Z8mH2zS6YyABt2GA4E745',
+    spotifyUrl: 'https://open.spotify.com/track/0FTmksd2dxiE5e3rWyJXs6?si=4c768a9fc2ff4204',
     gradient: 'from-red-600/20 to-orange-500/20',
     hoverGradient: 'hover:from-red-600/30 hover:to-orange-500/30',
     aspectRatio: 'aspect-square',

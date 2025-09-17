@@ -2,11 +2,11 @@ import { motion } from "motion/react";
 import { Card } from "./ui/card";
 
 const links = [
-  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg", href: "https://github.com/mohakgupta", label: "GitHub" },
-  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg", href: "https://twitter.com/mohakgupta", label: "X" },
-  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg", href: "mailto:mohak@example.com", label: "Gmail" },
-  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg", href: "https://discord.com/users/mohakgupta", label: "Discord" },
-  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg", href: "https://linkedin.com/in/mohakgupta", label: "LinkedIn" }
+  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg", href: "https://github.com/MohakGupta2004", label: "GitHub" },
+  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg", href: "https://twitter.com/rushbeef04", label: "X" },
+  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg", href: "mailto:mohakgupta500@gmail.com", label: "Gmail" },
+  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg", href: "https://discord.com/users/rushbeef05", label: "Discord" },
+  { src: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg", href: "https://linkedin.com/in/mohak-gupta-007065294", label: "LinkedIn" }
 ];
 
 type LinksSectionProps = { smallGrid?: boolean };
