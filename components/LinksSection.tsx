@@ -56,6 +56,8 @@ export function LinksSection() {
               <Image
                 src={link.src}
                 alt={link.label}
+                width={48}
+                height={48}
                 className="w-6 h-6 invert brightness-0"
               />
             </a>
