@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { useState, useRef } from 'react';
 
 interface DraggableWrapperProps {
@@ -12,6 +12,7 @@ export function DraggableWrapper({ children, className = '', initialPosition = {
   const constraintsRef = useRef(null);
 
   return (
+    // This parent container should not have `overflow: hidden`
     <motion.div
       ref={constraintsRef}
       className="relative w-full h-full"
@@ -24,7 +25,8 @@ export function DraggableWrapper({ children, className = '', initialPosition = {
         onDragStart={() => setIsDragging(true)}
         onDragEnd={() => setIsDragging(false)}
         initial={initialPosition}
-        whileDrag={{ 
+        // `zIndex: 50` is what makes it appear on top of other components
+        whileDrag={{
           scale: 1.05,
           cursor: 'grabbing',
           zIndex: 50

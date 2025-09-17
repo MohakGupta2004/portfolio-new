@@ -9,6 +9,7 @@ import Link from "next/link";
 import { ContentCards } from "@/components/ContentCards";
 import { TechStackCard } from "@/components/TechStackCard";
 import { DraggableWrapper } from "@/components/DraggableWrapper";
+import { AchievementCard } from "@/components/AchivementCard";
 
 export default function App() {
   return (
@@ -56,14 +57,26 @@ export default function App() {
                     <ToolStackVertical />
                   </DraggableWrapper>
                 </div>
-                <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <DraggableWrapper>
-                    <ContentCards index={0} />
-                  </DraggableWrapper>
-                  <DraggableWrapper>
-                    <ContentCards index={1} />
-                  </DraggableWrapper>
+                <div className="flex-1 flex flex-col gap-4 max-h-[calc(100vh-12rem)]">
+                  {/* ContentCards (shrinkable) */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1 hide-scrollbar">
+                    <DraggableWrapper>
+                      <ContentCards index={0} />
+                    </DraggableWrapper>
+                    <DraggableWrapper>
+                      <ContentCards index={1} />
+                    </DraggableWrapper>
+                  </div>
+
+                  {/* Achievement Card (always visible at bottom) */}
+                  <div className="flex-shrink-0">
+                    <DraggableWrapper>
+                      <AchievementCard />
+                    </DraggableWrapper>
+                  </div>
                 </div>
+
+
               </div>
             </div>
 

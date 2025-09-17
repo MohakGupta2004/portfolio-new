@@ -46,3 +46,16 @@ body {
     flex-basis: calc(100% / 3);
   }
 }
+
+.hide-scrollbar {
+  /* For Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For Firefox */
+  scrollbar-width: none;
+
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
+}
