@@ -50,7 +50,7 @@ const projects: Project[] = [
     cardColor: "bg-orange-950/40",
     link: "https://github.com/NexorTech/Cloak-desktop.git", // Replace with actual link
   },
-    {
+  {
     title: "Msh",
     category: "A simple shell with C",
     description: "msh is a custom, lightweight shell program written in the C programming language.",
@@ -64,7 +64,7 @@ const projects: Project[] = [
     category: "A framework for solving portswigger ctfs easily",
     description: "This framework will help you creating automations for solving ctfs challengs. You can use it for free and also has default attack templates.",
     imageUrl: "https://i.ibb.co/Rkcp7CFv/95872359-16e7-4771-8333-37030aab30f0.png",
-    tags: ["Golang","html", "javascript"],
+    tags: ["Golang", "html", "javascript"],
     cardColor: "bg-[#4C1715]",
     link: "https://github.com/MohakGupta2004/Morphsploit" // Replace with actual link
   }
@@ -82,7 +82,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
   return (
     <motion.div variants={itemVariants} className="group h-full">
-      <Card 
+      <Card
         className={`
           h-full text-white rounded-2xl overflow-hidden
           border border-slate-800/50 transition-all duration-300
@@ -102,11 +102,18 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
         {/* UPDATED: Image size increased and shadow removed */}
         <div className="my-auto flex-grow flex items-center justify-center py-4">
-          <Image
-            src={project.imageUrl}
-            alt={project.title}
-            className="w-auto h-full max-h-[250px] md:max-h-[300px] rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
-          />
+          <div className="w-full flex items-center justify-center">
+            <Image
+              src={project.imageUrl}
+              alt={project.title}
+              width={500}
+              height={300}
+              className="w-full max-w-[500px] h-[250px] md:h-[300px] rounded-lg object-cover bg-white/10 transition-transform duration-300 group-hover:scale-105"
+              style={{ backgroundColor: "rgba(255,255,255,0.1)" }}
+              unoptimized
+            />
+
+          </div>
         </div>
 
         <footer className="flex flex-wrap justify-center gap-2 mt-auto">
@@ -145,7 +152,7 @@ export default function ProjectsPage() {
         animate="visible"
       >
         <div className="absolute inset-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:36px_36px] -z-10"></div>
-        
+
         <motion.div variants={itemVariants} className="mb-4">
           <Button variant="ghost" onClick={() => router.back()} className="text-slate-300 hover:text-white hover:bg-white/10">
             <ArrowLeft className="h-5 w-5 mr-2" />
