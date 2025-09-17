@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Responsive styles for Embla Carousel to show multiple slides */
+.embla__slide {
+  /* On mobile, each slide takes up 90% of the width */
+  flex: 0 0 90%;
+  min-width: 0;
+  padding-left: 1rem; /* Gap between slides */
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    /* Two slides visible on tablets */
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    /* Three slides visible on desktops */
+    flex-basis: calc(100% / 3);
+  }
+}
