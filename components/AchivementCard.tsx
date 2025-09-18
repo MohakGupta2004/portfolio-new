@@ -13,14 +13,14 @@ export function AchievementCard() {
   const achievements = [
     {
       key: 'sih',
-      text: 'Smart India Hackathon Winner 2024',
+      text: 'Smart India Hackathon runnerups 2023',
       link: 'https://www.sih.gov.in/',
     },
-    {key: 'Innovocon', text:'Innovocon 2025 Winner', link: ''},
-    {key: 'comptia', text: 'Comptia Pentest+ Linkedin', link: 'https://www.linkedin.com/learning/certificates/4f2f31077056cd86e5b5f474099fa28ba30c72b3d1dad6b2c8a7591520ba02b1'},
+    { key: 'Innovocon', text: 'Innovocon 2025 Winner', link: '' },
+    { key: 'comptia', text: 'Comptia Pentest+ Linkedin', link: 'https://www.linkedin.com/learning/certificates/4f2f31077056cd86e5b5f474099fa28ba30c72b3d1dad6b2c8a7591520ba02b1' },
     { key: 'cnsp', text: 'Certified Network Security Practitioner', link: 'https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXV/oLILyQdbIH/qWi6y0BmiDRtAcVmopBCxBAZEtOwxm+6XzHRovGNMw5LI30Yka3NqrlRXxfyq1dmyKtgDMN3Y=' },
     { key: 'thm', text: 'Top 15% on TryHackMe', link: 'https://tryhackme.com/p/rushbeef04/' },
-    {key: 'git', text:'Intermediate Git and Github', link: 'https://www.linkedin.com/learning/certificates/e8df51208279935e5b759419aa0b3bd050990bc4315dd208369fcda76a8749f7'}
+    { key: 'git', text: 'Intermediate Git and Github', link: 'https://www.linkedin.com/learning/certificates/e8df51208279935e5b759419aa0b3bd050990bc4315dd208369fcda76a8749f7' }
   ];
 
   const [index, setIndex] = useState(0);
