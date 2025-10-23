@@ -2,7 +2,6 @@
 import { ProfileCard } from "../components/ProfileCard";
 import { LinksSection } from "../components/LinksSection";
 import { ProjectsCard } from "../components/ProjectsCard";
-import { AnimatedBackground } from "../components/AnimatedBackground";
 import { ToolStackVertical } from "../components/ToolStackVertical";
 import { GalaxySection } from "../components/GalaxySection";
 import Link from "next/link";
