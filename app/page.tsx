@@ -10,19 +10,37 @@ import { ContentCards } from "@/components/ContentCards";
 import { TechStackCard } from "@/components/TechStackCard";
 import { DraggableWrapper } from "@/components/DraggableWrapper";
 import { AchievementCard } from "@/components/AchivementCard";
-
+import LiquidEther from "@/components/LiquidEther";
 export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
 
       {/* Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <AnimatedBackground />
-      </div>
 
+      <div className="absolute inset-0 z-0">
+        <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
+          <LiquidEther
+            colors={['#5227FF', '#FF9FFC', '#B19EEF']}
+            mouseForce={20}
+            cursorSize={100}
+            isViscous={false}
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={false}
+            autoDemo={true}
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
+          />
+        </div>
+      </div>
       {/* Foreground content */}
-      <div className="relative z-10 flex justify-center pt-15 md:pt-24 px-4 sm:px-6 h-screen overflow-auto">
-        <div className="w-full max-w-5xl">
+      <div className="relative z-10 flex justify-center pt-15 md:pt-24 px-4 sm:px-6 h-screen overflow-auto pointer-events-none">
+        <div className="w-full max-w-5xl pointer-events-auto">
 
           {/* Unified grid */}
           <div className="grid md:grid-cols-12 gap-6 items-start">
