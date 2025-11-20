@@ -41,8 +41,8 @@ export function ProfileCard() {
       <Card className="relative bg-card/5 backdrop-blur-sm border border-white/10 p-5 
                 hover:scale-[1.02] transition-transform duration-300 
                 shadow-inner overflow-hidden group">
-  {/* inner glow line */}
-  <div className="absolute inset-0 pointer-events-none rounded-xl 
+        {/* inner glow line */}
+        <div className="absolute inset-0 pointer-events-none rounded-xl 
                   shadow-[inset_0_0_8px_rgba(255,255,255,0.1)] 
                   transition-all duration-500 group-hover:shadow-[inset_0_0_18px_rgba(255,255,255,0.25)]" />
 
@@ -50,7 +50,7 @@ export function ProfileCard() {
         <div className="flex items-center gap-4 mb-4">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20">
             <Image
-              src="https://pbs.twimg.com/profile_images/1965130285122543616/w2iOLwN3_400x400.jpg"
+              src="https://pbs.twimg.com/profile_images/1991523266692046849/bxUc8Pgg_400x400.jpg"
               alt="Mohak Gupta"
               width={48}
               height={48}
