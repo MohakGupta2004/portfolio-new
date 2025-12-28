@@ -50,7 +50,7 @@ export function ProfileCard() {
         <div className="flex items-center gap-4 mb-4">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20">
             <Image
-              src="https://pbs.twimg.com/profile_images/1991523266692046849/bxUc8Pgg_400x400.jpg"
+              src="https://pbs.twimg.com/profile_images/2002715777825419264/T-_h72SJ_400x400.jpg"
               alt="Mohak Gupta"
               width={48}
               height={48}
